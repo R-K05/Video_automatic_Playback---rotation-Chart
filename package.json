@@ -1,0 +1,12 @@
+{
+  "name": "kswiper",
+  "version": "1.0.0",
+  "description": "automatically playable video rotation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"package": "vue-cli-service build --target lib ../package/index.js --name pig-ui --dest pig-ui"
+  },
+  "author": "",
+  "license": "ISC"
+}

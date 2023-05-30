@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "kswiper": "/uni_modules/ning-scrollhorizontally/components/ning-scrollhorizontally/ning-scrollhorizontally"
+  }
+}
