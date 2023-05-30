@@ -1,0 +1,56 @@
+# Video_automatic_Playback---rotation-Chart
+
+# ning-scrollhorizontally
+此插件依赖第三方uView插件，插件已经引入相关依赖，无需再引入
+
+# 效果
+[效果图](https://ibb.co/9VNVt4S)
+# 使用:
+
+模板使用：
+
+		<kswiper :list="list4" previousMargin="30" nextMargin="30" circular radius="5"
+			bgColor="rgba(0,0,0,0)" pauseVideo autoplay auto show-fullscreen-btn="false" 
+			@click="handleSwiperClick($event)" @change="changee" :class="this.gk ? h : w"></kswiper>
+
+data数据：(将项目中的url数据换成视频资源，即可实现切换时视频自动播放)
+
+       list4: [
+       	{
+       		// 视频地址
+       		url: '',
+       		// 显示的标题
+       		title: '',
+       		// 切换时封面
+       		poster: ''
+       	}, {
+       		url: '',
+       		// 显示的标题
+       		title: '',
+       		// 切换时封面
+       		poster: ''
+       	},
+       ],
+
+# 项目引入：
+由于借助了第三方组件，因此需要当前页面和main.js同时引入
+
+当前页面    
+
+	import kswiper from '../../uni_modules/ning-scrollhorizontally/components/ning-scrollhorizontally/ning-scrollhorizontally.vue'
+	
+	components:{
+		kswiper
+	},
+	
+main.js
+
+    import kswiper from './uni_modules/ning-scrollhorizontally';
+	
+    Vue.use(kswiper);
+	
+
+# 其他详细内容 可下载项目示例查看
+
+
+
